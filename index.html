@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Jonathan's Taqueria – East 6th, Austin</title>
+<meta name="description" content="Family-owned Mexican taqueria: seafood, meat and chicken tacos on handmade corn or flour tortillas.">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Jonathan's Taqueria – East 6th">
+<meta property="og:description" content="Family-owned Mexican taqueria: seafood, meat and chicken tacos on handmade corn or flour tortillas.">
+<meta property="og:image" content="images/tacos-and-salsas.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Jonathan's Taqueria – East 6th",
+  "description": "Family-owned Mexican taqueria serving seafood, meat and chicken tacos on handmade corn or flour tortillas, made with fresh ingredients.",
+  "servesCuisine": ["Mexican", "Tacos"],
+  "telephone": "+1-512-555-0125",
+  "image": ["images/tacos-and-salsas.jpg", "images/grill.jpg", "images/taco-with-avocado.jpg"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1100 E 6th St",
+    "addressLocality": "Austin",
+    "addressRegion": "TX",
+    "postalCode": "78702",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 30.26485, "longitude": -97.73129 }
+}
+</script>
+<style>
+  :root {
+    --bg: #fffaf3;
+    --surface: #ffffff;
+    --ink: #2b1d14;
+    --muted: #6b5a4c;
+    --accent: #c2410c;
+    --accent-2: #15803d;
+    --line: #ecdfd0;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: var(--accent); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+
+  header.top {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(255, 250, 243, 0.94);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .brand { font-weight: 800; font-size: 1.15rem; text-decoration: none; color: var(--ink); }
+  .brand span { color: var(--accent); }
+  nav a { margin-left: 18px; text-decoration: none; color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+  nav a:hover { color: var(--accent); }
+
+  .hero {
+    position: relative;
+    min-height: 72vh;
+    display: grid; place-items: end start;
+    background: #1a120c url("images/tacos-and-salsas.jpg") center 70% / cover no-repeat;
+    color: #fff;
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(20, 12, 6, 0.85) 0%, rgba(20, 12, 6, 0.25) 60%, rgba(20, 12, 6, 0.1) 100%);
+  }
+  .hero .wrap { position: relative; padding-bottom: 56px; padding-top: 120px; }
+  .hero h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); line-height: 1.05; margin: 0 0 12px; }
+  .hero p { font-size: 1.15rem; max-width: 36em; margin: 0 0 24px; opacity: 0.95; }
+  .btn {
+    display: inline-block; padding: 12px 22px; border-radius: 999px;
+    background: var(--accent); color: #fff; text-decoration: none; font-weight: 700;
+  }
+  .btn.ghost { background: transparent; border: 2px solid #fff; margin-left: 8px; }
+
+  section { padding: 72px 0; }
+  section h2 { font-size: 2rem; margin: 0 0 8px; }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.8rem; font-weight: 700; color: var(--accent); }
+
+  .story { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center; }
+  .story img { border-radius: 16px; aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
+
+  .menu { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 32px; }
+  .card { border: 1px solid var(--line); border-radius: 16px; padding: 24px; background: var(--bg); }
+  .card h3 { margin: 0 0 6px; font-size: 1.25rem; }
+  .card ul { margin: 12px 0 0; padding-left: 18px; color: var(--muted); }
+  .note { margin-top: 28px; color: var(--muted); }
+
+  .fresh { display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: center; }
+  .fresh img { border-radius: 16px; max-height: 560px; width: 100%; object-fit: cover; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .chip { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 6px 14px; font-size: 0.95rem; }
+
+  .gallery { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 12px; margin-top: 28px; }
+  .gallery img { width: 100%; height: 320px; object-fit: cover; border-radius: 12px; }
+
+  .visit { background: var(--ink); color: #f6ede3; }
+  .visit a { color: #fdba74; }
+  .visit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 24px; }
+  .visit h3 { margin: 0 0 6px; color: #fff; }
+
+  footer { padding: 28px 0; color: var(--muted); font-size: 0.9rem; text-align: center; }
+
+  @media (max-width: 820px) {
+    nav { display: none; }
+    .story, .fresh, .menu-grid, .visit-grid { grid-template-columns: 1fr; }
+    .gallery { grid-template-columns: 1fr; }
+    .gallery img { height: 240px; }
+    section { padding: 48px 0; }
+    .btn.ghost { margin-left: 0; margin-top: 10px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">Jonathan's <span>Taqueria</span></a>
+    <nav>
+      <a href="#story">Our story</a>
+      <a href="#menu">Menu</a>
+      <a href="#fresh">Ingredients</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-label="Welcome">
+    <div class="wrap">
+      <h1>Authentic Mexican tacos<br>on East 6th</h1>
+      <p>Seafood, meat and chicken tacos on handmade corn or flour tortillas. Family owned, made fresh, in the heart of East Austin.</p>
+      <a class="btn" href="#menu">See the menu</a>
+      <a class="btn ghost" href="#visit">Find us</a>
+    </div>
+  </section>
+
+  <section id="story">
+    <div class="wrap story">
+      <div>
+        <div class="eyebrow">Our story</div>
+        <h2>From engineering to the taco grill</h2>
+        <p>Jonathan's Taqueria was started by an authentic Mexican and lifelong taco lover who discovered his real passion while working as an engineer. Weekends at the grill with family and friends turned into recipes, and recipes turned into a taqueria.</p>
+        <p>Today we're still a family-owned business. Every order is cooked the way we'd cook it for our own family: fresh, generous, and with tortillas made by hand.</p>
+      </div>
+      <img src="images/grill.jpg" alt="Steaks, chorizo, green onions and cheese-topped corn tortillas cooking on an outdoor charcoal grill" loading="lazy" width="1600" height="1200">
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <div class="wrap">
+      <div class="eyebrow">Menu</div>
+      <h2>Tacos, your way</h2>
+      <p>Every taco comes on a handmade <strong>corn</strong> or <strong>wheat (flour)</strong> tortilla, topped with onion and cilantro, with our house salsas on the side.</p>
+      <div class="menu-grid">
+        <div class="card">
+          <h3>Meat tacos</h3>
+          <p>Grilled and slow-cooked cuts from our trusted local partners.</p>
+          <ul>
+            <li>Carne asada</li>
+            <li>Carnitas</li>
+            <li>Chorizo</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Chicken tacos</h3>
+          <p>Marinated chicken, grilled to order.</p>
+          <ul>
+            <li>Pollo asado</li>
+            <li>Chicken al pastor</li>
+            <li>Chicken with beans</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Seafood tacos</h3>
+          <p>Fresh seafood, simply prepared.</p>
+          <ul>
+            <li>Fish tacos</li>
+            <li>Shrimp tacos</li>
+            <li>Mixed seafood</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Add avocado, extra salsa verde or salsa roja to any taco.</p>
+    </div>
+  </section>
+
+  <section id="fresh">
+    <div class="wrap fresh">
+      <img src="images/taco-with-avocado.jpg" alt="Chorizo taco on a corn tortilla topped with fresh pico de gallo and diced avocado" loading="lazy" width="900" height="1600">
+      <div>
+        <div class="eyebrow">Fresh ingredients</div>
+        <h2>Only fresh, every day</h2>
+        <p>We only cook with fresh ingredients. Our meat, chicken and seafood come from trusted partners we've worked with for years, and our tortillas are made by hand.</p>
+        <div class="chips">
+          <span class="chip">Red tomatoes</span>
+          <span class="chip">Onions</span>
+          <span class="chip">Cilantro</span>
+          <span class="chip">Garlic</span>
+          <span class="chip">Handmade tortillas</span>
+          <span class="chip">Meat</span>
+          <span class="chip">Chicken</span>
+          <span class="chip">Seafood</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" aria-label="Photo gallery">
+    <div class="wrap">
+      <div class="eyebrow">From our kitchen</div>
+      <h2>A taste of East 6th</h2>
+      <div class="gallery">
+        <img src="images/tacos-and-salsas.jpg" alt="A plate of carnitas and chicken tacos with beans, next to bowls of red salsa, green salsa and pico de gallo" loading="lazy" width="1440" height="1440">
+        <img src="images/grill.jpg" alt="Meat and tortillas on the grill" loading="lazy" width="1600" height="1200">
+        <img src="images/taco-with-avocado.jpg" alt="Taco with avocado and pico de gallo" loading="lazy" width="900" height="1600">
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" class="visit">
+    <div class="wrap">
+      <div class="eyebrow" style="color:#fdba74">Visit us</div>
+      <h2>Jonathan's Taqueria – East 6th</h2>
+      <div class="visit-grid">
+        <div>
+          <h3>Address</h3>
+          <p>1100 E 6th St<br>Austin, TX 78702</p>
+          <p><a href="https://www.openstreetmap.org/?mlat=30.26485&amp;mlon=-97.73129#map=17/30.26485/-97.73129" target="_blank" rel="noopener">Open map</a></p>
+        </div>
+        <div>
+          <h3>Phone</h3>
+          <p><a href="tel:+15125550125">(512) 555-0125</a></p>
+        </div>
+        <div>
+          <h3>Also in Austin</h3>
+          <p>Jonathan's Taqueria – South Congress<br><a href="tel:+15125550124">(512) 555-0124</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    © Jonathan's Taqueria. Demo site for a fictional business, used for product testing. Not a real restaurant.
+  </div>
+</footer>
+
+</body>
+</html>
